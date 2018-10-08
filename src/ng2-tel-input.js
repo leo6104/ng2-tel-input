@@ -22,7 +22,7 @@ var Ng2TelInput = /** @class */ (function () {
     Ng2TelInput.prototype.onBlur = function () {
         var isInputValid = this.isInputValid();
         if (isInputValid) {
-            var telOutput = this.ngTelInput.intlTelInput("getNumber");
+            var telOutput = this.ngTelInput.getNumber();
             this.hasError.emit(isInputValid);
             this.ng2TelOutput.emit(telOutput);
         }
